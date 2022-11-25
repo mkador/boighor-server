@@ -1,0 +1,74 @@
+[
+    {
+        "category_id":"01",
+        "product_name": "Bukhari Sharif",
+        "location": "Mirpur",
+        "resale_price": "200",
+        "original_price": "500",
+        "picture": "https://www.sohopathi.com/wp-content/uploads/2018/07/Amar-Bangla-Boi-Class-5.jpg",
+        "year_of_use": "1y",
+        "post_time": "2022-08-24 17:27:34",
+        "sellers_name": "Ador",
+        "varified": false
+      },
+      {
+        "category_id":"01",
+        "product_name": "Quarn Sharif",
+        "location": "Mirpur",
+        "resale_price": "200",
+        "original_price": "500",
+        "picture": "https://www.sohopathi.com/wp-content/uploads/2018/07/Amar-Bangla-Boi-Class-5.jpg",
+        "year_of_use": "1y",
+        "post_time": "2022-08-24 17:27:34",
+        "sellers_name": "Ador",
+        "varified": false
+      },
+      {
+        "category_id":"02",
+        "product_name": "Erina",
+        "location": "Dhanmondi",
+        "resale_price": "300",
+        "original_price": "600",
+        "picture": "https://www.sohopathi.com/wp-content/uploads/2018/07/Amar-Bangla-Boi-Class-5.jpg",
+        "year_of_use": "2y",
+        "post_time": "2022-08-24 17:27:34",
+        "sellers_name": "Munna",
+        "varified": false
+      },
+      {
+        "category_id":"02",
+        "product_name": "3PM",
+        "location": "Dhanmondi",
+        "resale_price": "250",
+        "original_price": "500",
+        "picture": "https://www.sohopathi.com/wp-content/uploads/2018/07/Amar-Bangla-Boi-Class-5.jpg",
+        "year_of_use": "3y",
+        "post_time": "2022-08-24 17:27:34",
+        "sellers_name": "Bijoy",
+        "varified": false
+      },
+      {
+        "category_id":"03",
+        "product_name": "Republic",
+        "location": "Farmgate",
+        "resale_price": "200",
+        "original_price": "400",
+        "picture": "https://www.sohopathi.com/wp-content/uploads/2018/07/Amar-Bangla-Boi-Class-5.jpg",
+        "year_of_use": "3y",
+        "post_time": "2022-08-24 17:27:34",
+        "sellers_name": "Ador",
+        "varified": false
+      },
+      {
+        "category_id":"03",
+        "product_name": "Plato",
+        "location": "Gulshan",
+        "resale_price": "280",
+        "original_price": "450",
+        "picture": "https://www.sohopathi.com/wp-content/uploads/2018/07/Amar-Bangla-Boi-Class-5.jpg",
+        "year_of_use": "2y",
+        "post_time": "2022-08-24 17:27:34",
+        "sellers_name": "Shamim",
+        "varified": false
+      }
+]

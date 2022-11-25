@@ -20,6 +20,10 @@ const client = new MongoClient(uri, {
 async function run() {
   try {
     const usersCollection = client.db('boighorDb').collection('users')
+    const categoriesCollection = client
+      .db('boighorDb')
+      .collection('product_category')
+    const productCollection = client.db('boighorDb').collection('product')
     app.put('/user/:email', async (req, res) => {
       const email = req.params.email
       const user = req.body
@@ -37,10 +41,32 @@ async function run() {
       res.send({ result, token })
     })
     console.log('Database Connected...')
+
+    app.get('/categories', async (req, res) => {
+      const query = {}
+      const categories = await categoriesCollection.find(query).toArray()
+      res.send(categories)
+    })
+
+    app.get('/category/:id', async (req, res) => {
+      const id = req.params.id
+
+      const category_products = await productCollection
+        .find({ category_id: id })
+        .toArray()
+      res.send(category_products)
+    })
+
+    app.post('/addProduct', async (req, res) => {
+      const product = req.body
+
+      const result = await productCollection.insertOne(product)
+      res.send(result)
+    })
   } finally {
   }
 }
-run().catch((errpr) => console.error(error))
+run().catch((error) => console.error(error))
 
 app.get('/', (req, res) => {
   res.send('BoiGhor server is Running')

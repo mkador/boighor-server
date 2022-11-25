@@ -1,0 +1,14 @@
+[
+    {
+      "category_id": "01",
+      "name": "Islamic Books"
+    },
+    {
+      "category_id": "02",
+      "name": "Scientific Books"
+    },
+    {
+      "category_id": "03",
+      "name": "Philosophy Books"
+    }
+  ]
