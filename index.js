@@ -27,7 +27,7 @@ async function run() {
     app.put('/user/:email', async (req, res) => {
       const email = req.params.email
       const user = req.body
-      const filter = { email: email }
+      const filter = { email }
       const options = { upsert: true }
       const updateDoc = {
         $set: user,
@@ -41,6 +41,18 @@ async function run() {
       res.send({ result, token })
     })
     console.log('Database Connected...')
+
+    app.get('/user/:email', async (req, res) => {
+      const email = req.params.email
+      const user = await usersCollection.findOne({ email })
+      res.send(user)
+    })
+
+    app.get('/users/:user_type', async (req, res) => {
+      const user_type = req.params.user_type
+      const users = await usersCollection.find({ user_type }).toArray()
+      res.send(users)
+    })
 
     app.get('/categories', async (req, res) => {
       const query = {}
